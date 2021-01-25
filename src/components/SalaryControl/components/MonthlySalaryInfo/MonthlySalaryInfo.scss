@@ -1,0 +1,14 @@
+.salary-description {
+  background-color: #fbf4da;
+  padding: 1.75em 1em;
+  font-size: 1em;
+  max-width: 25em;
+
+  &__paragraph {
+    margin-bottom: 0.5em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

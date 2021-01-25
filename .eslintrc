@@ -1,0 +1,7 @@
+{
+  "extends": ["react-app", "plugin:prettier/recommended"],
+  "rules": {
+    "quotes": [1, "single", { "avoidEscape": true }],
+    "max-len": [1, 80]
+  }
+}

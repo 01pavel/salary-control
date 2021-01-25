@@ -1,0 +1,79 @@
+@import '../../../../index.scss';
+
+.ndfl-switch {
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #fda237;
+    border-color: #fda237;
+  }
+}
+
+div.ndfl-radio {
+  display: flex;
+  align-items: center;
+
+  input {
+    margin-top: 0;
+    cursor: pointer;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  input[type='radio']:after {
+    width: 1em;
+    height: 1em;
+    border: 1px solid $secondary-color;
+    border-radius: 50%;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    margin-bottom: 0.1em;
+  }
+
+  input[type='radio']:checked:after {
+    width: 1em;
+    height: 1em;
+    border: 1px solid $secondary-color;
+    border-radius: 50%;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: $primary-color;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    box-shadow: inset 0px 0px 0px 3px #fff;
+    margin-bottom: 0.1em;
+  }
+}
+
+div.tooltip.mrot-tooltip {
+  transform: translate(7.45em, 7.2em) !important;
+  background-color: $tooltip-color;
+  padding: 1.1em 1em;
+  opacity: 1;
+
+  .bs-tooltip-bottom .arrow::before,
+  .arrow::before {
+    bottom: -0.45rem;
+    border-width: 0.8rem;
+    border-left-color: #5e6caa;
+    border-bottom-color: #5e6caa;
+  }
+  .arrow {
+    transform: translate(0, 0) !important;
+  }
+  .tooltip-inner {
+    background-color: $tooltip-color;
+    font-size: 0.85em;
+    font-weight: 600;
+    max-width: 180px;
+    padding: 0;
+    text-align: left;
+  }
+}
